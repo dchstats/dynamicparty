@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+html {
+	font-size: 1rem;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.frame {
+	width: 98vw;
+	margin: auto;
+	margin-top: 0.5rem;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.frame-header {
+	height: 5rem;
+	background: #666;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 200%;
+}
+
+.frame-body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.frame-footer {
+	height: 2rem;
+	background: #333;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+table {
+	border: 1px solid lightgrey;
+	margin: 1rem;
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	height: 40px;
+	text-align: left;
+	padding: 0.25rem;
+}
+
+tr td:first-child {
+	width: 50%;
+	text-align: right;
+	font-weight: normal;
+	color: #555;
+	font-weight: 600;
+}
+
+tr td:last-child {
+	color: black;
+	font-size: 120%;
+	font-weight: 700;
+	padding-left: 10px;
+	color: blue;
+}
+
+input {
+	margin: 1rem;
+	width: 200px;
+	padding: 0.4rem 0.25rem;
+	border-radius: 2px;
+	border: 1px solid lightgrey;
+	outline: none;
+}
+
+input:focus {
+	outline: 2px solid goldenrod;
+}
+
+td > input {
+	margin: 0px;
+	width: 100%;
+}
+
+tr.head td {
+	text-align: center;
+	font-size: 125%;
+}
+
+.frame-body > div {
+	padding: 1rem;
+	border-bottom: 5px solid lightgrey;
+}
+
+.table-container {
+	display: flex;
+	justify-content: center;
+}
+
+tr:nth-child(even) {
+	/* background:rgb(255, 255, 220); */
+}
+
+tr:nth-child(odd) {
+	background: #f1f1f1;
+}
+
+tr.head td {
+	background: #4caf50;
+	color: white;
+	border: none;
+}
+
+button {
+	width: 100px;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	background: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+button:hover {
+	background: rgb(0, 138, 0);
+}
+
+ul {
+	list-style: none;
+}
+
+.nav {
+	padding: 0 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #666;
+}
+#date-container {
+	width: 25%;
+	text-align: left;
+}
+#status-container {
+	width: 50%;
+	text-align: center;
+}
+#submit-container {
+	width: 25%;
+	text-align: right;
+}
+
+#status {
+	width: 100%;
+	background: none;
+	color: #999;
+	text-align: center;
+	border: 1px solid #444;
+}
+.tabs {
+	display: flex;
+}
+
+.tab {
+	width: 120px;
+	text-align: center;
+	padding: 0.5rem;
+	cursor: pointer;
+	border-radius: 5px 5px 0 0;
+	color: white;
+}
+
+.active-tab {
+	border-bottom: none;
+	background: #fff;
+	color: #333;
+}
+
+.hidden {
+	display: none;
+}

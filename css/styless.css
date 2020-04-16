@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+html {
+	font-size: 1rem;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.frame {
+	width: 98vw;
+	margin: auto;
+	margin-top: 0.5rem;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.frame-header {
+	height: 5rem;
+	background: #666;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 200%;
+}
+
+.frame-body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.frame-footer {
+	height: 2rem;
+	background: #333;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+table {
+	border: 2px solid lightgrey;
+	margin: 1rem;
+    border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	height: 40px;
+	text-align: center;
+	padding: 0.25rem;
+	font-weight: bold;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* tr td:first-child {
+	width: 50%;
+	text-align: right;
+	font-weight: normal;
+	color: #555;
+	font-weight: 600;
+} */
+
+tr td:last-child {
+	color: black;
+	font-size: 120%;
+	font-weight: 700;
+	padding-left: 10px;
+	color: blue;
+}
+
+input {
+	margin: 1rem;
+	width: 200px;
+	padding: 0.4rem 0.25rem;
+	border-radius: 2px;
+	border: 1px solid lightgrey;
+	outline: none;
+}
+
+input:focus {
+	outline: 2px solid goldenrod;
+}
+
+td > input {
+	margin: 0px;
+	width: 100%;
+}
+
+tr.head td {
+	text-align: center;
+	font-size: 125%;
+}
+
+.frame-body > div {
+	padding: 1rem;
+	border-bottom: 5px solid lightgrey;
+}
+
+tr:nth-child(even) {
+	background:rgb(233, 233, 131);
+}
+
+tr:nth-child(odd) {
+	background: #f1f1f1;
+}
+
+tr.head td {
+	background: #4caf50;
+	color: white;
+	border: none;
+}
+
+button {
+	width: 100px;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	cursor: pointer;
+	background: #35d63a;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+button:hover {
+	background: rgb(0, 138, 0);
+}
+#submit-container {
+	width: 25%;
+	text-align: right;
+}
+
+* { font: 17px Calibri; } 
+        table { width: 70%; }
+        table, th, td { border: solid 1px #DDD;
+            border-collapse: collapse; padding: 2px 3px; text-align: center;
+        }

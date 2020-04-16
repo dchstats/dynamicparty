@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Target</title>
+   <script src="js/target.js" defer></script>
+    <style>
+        /* body {
+            display: flex;
+            flex-wrap: wrap;
+        } */
+
+    div.mtgt, div.ytgt {
+        display: inline-block;
+            width: 48%;
+        }
+        .submit{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-header">
+        <p>Target Data Entry-DCH</p>
+    </div>
+    <div class="mtgt">
+        Month:
+        <input type="month" name="month" id="month">
+        <button id="mfetch">fetch</button>
+        <table>
+            <tr>
+                <td>Coal shovel dumper</td>
+                <td><input type="number" id="mtgt_csd"></input></td>
+            </tr>
+            <tr>
+                <td>coal surface miner</td>
+                <td><input type="number" id="mtgt_csm"></input></td>
+            </tr>
+            <tr>
+                <td>total coal</td>
+                <td><input type="number" id="mtgt_tc"></input></td>
+            </tr>
+            <tr>
+                <td>ob shovel dumper</td>
+                <td><input type="number" id="mtgt_osd"></input></td>
+            </tr>
+            <tr>
+                <td>ob dragline</td>
+                <td><input type="number" id="mtgt_odl"></input></td>
+            </tr>
+            <tr>
+                <td>ob departmental</td>
+                <td><input type="number" id="mtgt_odpt"></input></td>
+            </tr>
+            <tr>
+                <td>ob outsourcing</td>
+                <td><input type="number" id="mtgt_out"></input></td>
+            </tr>
+            <tr>
+                <td>grand total ob</td>
+                <td><input type="number" id="mtgt_gtob"></input></td>
+            </tr>
+            <tr>
+                <td>silo </td>
+                <td><input type="number" id="mtgt_silo"></input></td>
+            </tr>
+            <tr>
+                <td>road</td>
+                <td><input type="number" id="mtgt_road"></input></td>
+            </tr>
+            <tr>
+                <td>WharfWall</td>
+                <td><input type="number" id="mtgt_ww"></input></td>
+            </tr>
+            <tr>
+                <td>total despatch</td>
+                <td><input type="number" id="mtgt_tdesp"></input></td>
+            </tr>
+            <tr>
+                <td>jnt recvd ww</td>
+                <td><input type="number" id="mtgt_jrw"></input></td>
+            </tr>
+            <tr>
+                <td>jnt recvd chp</td>
+                <td><input type="number" id="mtgt_jrc"></input></td>
+            </tr>
+            <tr>
+                <td>net offtake</td>
+                <td><input type="number" id="mtgt_ndesp"></input></td>
+            </tr>
+            <tr>
+                <td>surface miner trans</td>
+                <td><input type="number" id="mtgt_smt"></input></td>
+            </tr>
+            <tr>
+                <td>mobile crusher trans</td>
+                <td><input type="number" id="mtgt_mct"></input></td>
+            </tr>
+            <tr>
+                <td>chp trans</td>
+                <td><input type="number" id="mtgt_chpt"></input></td>
+            </tr>
+            <tr>
+                <td>capacity utilization</td>
+                <td><input type="number" id="mtgt_cap"></input></td>
+            </tr>
+            <tr>
+                <td>dragline rehandling</td>
+                <td><input type="number" id="mtgt_drl"></input></td>
+            </tr>
+        </table>
+        <button class="submit" id="msubmit">submit</button>
+    </div>
+
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
+
+
+
+    <div class="ytgt">
+        Year:
+        <input type="year" name="year" id="year">
+        <button id="yfetch">fetch</button>
+        <table>
+            <tr>
+                <td>Coal shovel dumper</td>
+                <td><input type="number" id="ytgt_csd"></input></td>
+            </tr>
+            <tr>
+                <td>coal surface miner</td>
+                <td><input type="number" id="ytgt_csm"></input></td>
+            </tr>
+            <tr>
+                <td>total coal</td>
+                <td><input type="number" id="ytgt_tc"></input></td>
+            </tr>
+            <tr>
+                <td>ob shovel dumper</td>
+                <td><input type="number" id="ytgt_osd"></input></td>
+            </tr>
+            <tr>
+                <td>ob dragline</td>
+                <td><input type="number" id="ytgt_odl"></input></td>
+            </tr>
+            <tr>
+                <td>ob departmental</td>
+                <td><input type="number" id="ytgt_odpt"></input></td>
+            </tr>
+            <tr>
+                <td>ob outsourcing</td>
+                <td><input type="number" id="ytgt_out"></input></td>
+            </tr>
+            <tr>
+                <td>grand total ob</td>
+                <td><input type="number" id="ytgt_gtob"></input></td>
+            </tr>
+            <tr>
+                <td>silo </td>
+                <td><input type="number" id="ytgt_silo"></input></td>
+            </tr>
+            <tr>
+                <td>road</td>
+                <td><input type="number" id="ytgt_road"></input></td>
+            </tr>
+            <tr>
+                <td>WharfWall</td>
+                <td><input type="number" id="ytgt_ww"></input></td>
+            </tr>
+            <tr>
+                <td>total despatch</td>
+                <td><input type="number" id="ytgt_tdesp"></input></td>
+            </tr>
+            <tr>
+                <td>jnt recvd ww</td>
+                <td><input type="number" id="ytgt_jrw"></input></td>
+            </tr>
+            <tr>
+                <td>jnt recvd chp</td>
+                <td><input type="number" id="ytgt_jrc"></input></td>
+            </tr>
+            <tr>
+                <td>net offtake</td>
+                <td><input type="number" id="ytgt_ndesp"></input></td>
+            </tr>
+            <tr>
+                <td>surface miner trans</td>
+                <td><input type="number" id="ytgt_smt"></input></td>
+            </tr>
+            <tr>
+                <td>mobile crusher trans</td>
+                <td><input type="number" id="ytgt_mct"></input></td>
+            </tr>
+            <tr>
+                <td>chp trans</td>
+                <td><input type="number" id="ytgt_chpt"></input></td>
+            </tr>
+            <tr>
+                <td>capacity utilization</td>
+                <td><input type="number" id="ytgt_cap"></input></td>
+            </tr>
+            <tr>
+                <td>dragline rehandling</td>
+                <td><input type="number" id="ytgt_drl"></input></td>
+            </tr>
+        </table>
+        <button class="submit" id="ysubmit">submit</button>
+    </div>
+
+</body>
+
+</html>

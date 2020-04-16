@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Target</title>
+    <script src="js/party.js" defer></script>
+    <style>
+        /* body {
+            display: flex;
+            flex-wrap: wrap;
+        } */
+
+        div.party {
+            display: inline-block;
+            width: 90%;
+        }
+
+        .submit {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-header">
+        <p>Despatch Consumer Entry (Party-Name)-DCH</p>
+    </div>
+    <div class="party">
+        <table>
+            <tr>
+                <td>Party Name</td>
+                <td><input type="text" id="pname"></input></td>
+            </tr>
+            <tr>
+                <td>Agreement type</td>
+                <td><input type="text" list="pagree">
+                <datalist id="pagree">
+                    <option value="FSA"></option>
+                    <option value="SHAKTI"></option>
+                    <option value="E-AUCTION"></option>
+                </datalist>
+                </input></td>
+            </tr>
+            <tr>
+                <td>End Use</td>
+                <td><input type="text" list="puse">
+                    <datalist id="puse">
+                        <option value="Power"></option>
+                        <option value="Cement"></option>
+                        <option value="Aluminum"></option>
+                        <option value="Steel"></option>
+                        <option value="Non-Power"></option>
+                    </datalist>
+                </input></td>
+            </tr>
+            <tr>
+                <td>Pit head Price</td>
+                <td><input type="number" id="prate"></input></td>
+            </tr>
+            <tr>
+                <td>Receving State</td>
+                <td><input type="text" id="pstate"></input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="submit" id="partysubmit">submit</button></td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="frame-footer">
+        <p>Dudhichua Project</p>
+    </div>
+</body>
+
+</html>
